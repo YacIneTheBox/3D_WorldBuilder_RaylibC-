@@ -35,6 +35,7 @@ bool IsButtonClicked(Button button) {
     return IsButtonHovered(button) && IsMouseButtonPressed(MOUSE_LEFT_BUTTON);
 }
 
+// adding a com to pushForce
 void DrawButton(Button button) {
     Color buttonColor = IsButtonHovered(button) ? button.hoverColor : button.normalColor;
     DrawRectangleRec(button.bounds, buttonColor);
